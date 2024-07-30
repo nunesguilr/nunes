@@ -1,0 +1,121 @@
+:root {
+    --blackback: #000000;
+    --orangeback: #DB7E14;
+    --text: #E2E2E2;
+    --textsub: #e2e2e27a;
+    --navback: #B56810;
+    /* font-family: "Roboto Mono", monospace; */
+    /* font-family: "Libre Baskerville", serif; */
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    height: 90dvh;
+    background: var(--blackback);
+    display: flex;
+    align-items: center;
+    color: var(--text);
+    gap: 10dvh;
+    border-bottom: var(--navback) solid .5dvh;
+}
+
+main {
+    background: var(--blackback);
+    height: 82dvh;
+    /* box-shadow: var(--navback) 0 8dvh 20dvh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 9dvh 0dvh 5dvh 0dvh;
+    transition: all .5s;
+    border-bottom: var(--navback) solid .5dvh;
+}
+
+main>.links,
+main>.redes,
+main>.contatos {
+    color: var(--orangeback);
+    font-size: 7dvh;
+}
+
+p:hover,
+a:hover {
+    text-decoration: underline;
+}
+
+a,
+p {
+    all: inherit;
+    cursor: pointer;
+}
+
+header img {
+    height: 70dvh;
+    border-radius: 50%;
+    margin-left: 10dvh;
+    border: var(--text) solid .5dvh;
+}
+
+h1 {
+    font-size: 12dvh;
+    color: var(--orangeback);
+    /* text-shadow: 0 .5vh 0 var(--text); */
+    /* text-shadow: .5dvh .5dvh var(--textsub); */
+}
+
+.redes img {
+    height: 15dvh;
+    opacity: 0.4;
+    transition: all .5s;
+}
+
+.redes img:hover {
+    opacity: 1;
+}
+
+.redes,
+.imgred {
+    display: flex;
+    gap: 3.5dvh;
+    color: var(--orangeback)
+}
+
+.redes {
+    flex-direction: column;
+    text-align: center;
+    gap: 5dvh;
+}
+
+main {
+    text-align: center;
+    gap: 13dvh;
+}
+
+.links a,
+.contatos a {
+    all: inherit;
+    border: var(--navback) solid .4dvh;
+    padding: 2dvh;
+    border-radius: 5dvh;
+    cursor: pointer;
+}
+
+footer {
+    background: var(--blackback);
+    height: 30dvh;
+    color: var(--text);
+    display: flex;
+    padding-top: 8dvh;
+    align-items: start;
+    justify-content: space-evenly;
+    font-size: 3dvh;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&display=swap');

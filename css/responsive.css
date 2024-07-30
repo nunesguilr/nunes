@@ -1,0 +1,57 @@
+@media screen and (max-width: 768px) {
+    main {
+        height: 40dvh;
+    }
+
+    header img {
+        height: 17dvh;
+        border-radius: 50%;
+        margin-left: 2dvh;
+        border: .3dvh var(--text) solid;
+    }
+
+
+    h1 {
+        font-size: 5.5dvh;
+        color: var(--orangeback);
+        /* text-shadow: 0 2vh 0 var(--text); */
+        /* text-shadow: .5dvh .5dvh var(--navback); */
+    }
+
+    header {
+        height: 40dvh;
+        display: flex;
+        align-items: center;
+        gap: 3dvh;
+    }
+
+    main {
+        background: var(--blackback);
+        height: 44dvh;
+        gap: 3dvh;
+        padding: 6dvh 0 0 0;
+    }
+
+    .redes{
+        gap: 4.5dvh;
+    }
+
+    .redes img {
+        height: 8dvh;
+    }
+
+    main>.links,
+    main>.redes,
+    main>.contatos {
+        font-size: 3.5dvh;
+    }
+
+    footer{
+        padding-top: 4dvh;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.4dvh;
+        height: 24dvh;
+        /* gap: -4dvh; */
+    }
+}
