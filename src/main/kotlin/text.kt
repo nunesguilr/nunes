@@ -27,7 +27,8 @@ val n3: Double = numberByte
 // entendendo variaveis Var é mutavel e Val imutavel
     var nome = "luis"
     nome  = "leonardo"
-
+    val carro = "corola"
+//   Erro de sintaxe carro = "fusca"
 
 
 }
