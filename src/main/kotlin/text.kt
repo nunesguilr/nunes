@@ -83,5 +83,40 @@ val n3: Double = numberByte
     val school = arrayOf("shark", "salmon", "minnow")
     println(java.util.Arrays.toString(school))
 
-    // Existem diferentes tipagens para os arrays e listas
+    val array = Array (5) {it * 2}
+    println(java.util.Arrays.toString(array))
+
+// Existem diferentes tipagens para os arrays e listas
+
+// Repetiçoes
+
+    for(element in school){
+        print(element + " ")
+    }
+    for((index ,element) in school.withIndex()){
+        println("seu elemento é $element e sua posição ${index + 1}")
+    }
+    for (i in 1..5) print(i)
+    println(" ")
+    for (i in 5 downTo 1 ) print(i)
+    println(" ")
+    for (i in 2..10 step 2 ) print(i)
+    println(" ")
+    for (i in 'a'..'d' ) print(i)
+    println(" ")
+
+    // Outros tipos de repetição
+    var numberRepeat = 0
+    while (numberRepeat < 10) {
+    numberRepeat++
+    }
+    println(numberRepeat)
+    do {
+        numberRepeat--
+    } while (numberRepeat > 10)
+    println("$numberRepeat tem seu valor mudado")
+
+    repeat(2){
+        print("Eu sou demais ")
+    }
 }
